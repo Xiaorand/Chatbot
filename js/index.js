@@ -3,7 +3,6 @@
   const user = response.data;
 
   if (!user) {
-    alert("请先登入！");
     location.href = baseUrl + "../login.html";
     return;
   }
