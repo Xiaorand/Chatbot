@@ -10,6 +10,8 @@ const loginPwd = new userReg("txtLoginPwd", async function (val) {
   }
 });
 
+console.log(baseUrl);
+
 const form = document.querySelector(".user-form");
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
@@ -22,7 +24,7 @@ form.addEventListener("submit", async function (e) {
   const response = await API.login(data);
   if (response.code === 0) {
     alert("登录成功！");
-    location.href = baseUrl + "../index.html";
+    location.href = "/Chatbot/" + "../index.html";
   } else {
     loginId.p.innerText = "密码或账号错误！";
     loginPwd.txtId.value = "";
