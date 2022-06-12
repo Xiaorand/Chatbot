@@ -22,7 +22,7 @@ form.addEventListener("submit", async function (e) {
   const response = await API.login(data);
   if (response.code === 0) {
     alert("登录成功！");
-    location.href = "../index.html";
+    location.href = baseUrl + "../index.html";
   } else {
     loginId.p.innerText = "密码或账号错误！";
     loginPwd.txtId.value = "";

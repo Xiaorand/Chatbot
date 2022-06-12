@@ -46,6 +46,6 @@ form.addEventListener("submit", async function (e) {
   const response = await API.reg(data);
   if (response.code === 0) {
     alert("注册成功！");
-    location.href = "../login.html";
+    location.href = baseUrl + "../login.html";
   }
 });

@@ -4,7 +4,7 @@
 
   if (!user) {
     alert("请先登入！");
-    location.href = "../login.html";
+    location.href = baseUrl + "../login.html";
     return;
   }
 
@@ -27,7 +27,7 @@
     doms.close.onclick = async function () {
       alert("成功退出登录！");
       await API.logout();
-      location.href = "../login.html";
+      location.href = baseUrl + "../login.html";
     };
   }
   logout();
