@@ -10,8 +10,6 @@ const loginPwd = new userReg("txtLoginPwd", async function (val) {
   }
 });
 
-console.log(baseUrl);
-
 const form = document.querySelector(".user-form");
 form.addEventListener("submit", async function (e) {
   e.preventDefault();

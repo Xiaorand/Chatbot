@@ -1,1 +1,1 @@
-const baseUrl = "Chatbot/";
+const baseUrl = "/Chatbot/";

@@ -1,7 +1,0 @@
-POST https://study.duyiedu.com/api/user/login
-content-type: application/json
-
-{
-    "loginId": "Summer",
-    "loginPwd": "123123"
-}
